@@ -26,12 +26,12 @@ public class TestActivity extends AppCompatActivity {
     public void createPortrait() {
         final List<String> portraitUrlList = new ArrayList<>();
         for (int i = 0; i < 2; i++) {
-            portraitUrlList.add("http://img.apptest.yiguanjiaclub.org/79627ff4ad1c46aca47b9e5d08207a59/101d80da7e1e459c80d51886c0b62870");
+            portraitUrlList.add("http://www.iconpng.com/download/png/100002");
         }
         new Thread(new Runnable() {
             @Override
             public void run() {
-                List<Bitmap> mBitmapList = PortraitBitmapUtil.generateBitmapList(TestActivity.this, portraitUrlList, "http://img.apptest.yiguanjiaclub.org/79627ff4ad1c46aca47b9e5d08207a59/101d80da7e1e459c80d51886c0b62870");
+                List<Bitmap> mBitmapList = PortraitBitmapUtil.generateBitmapList(TestActivity.this, portraitUrlList, "http://www.iconpng.com/download/png/100002");
                 final Bitmap combineBitmap = PortraitBitmapUtil.getCombineBitmaps(mBitmapList);
 
                 runOnUiThread(new Runnable() {
