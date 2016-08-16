@@ -185,6 +185,7 @@ public class PortraitBitmapUtil {
                         pointTop = first.getWidth() / 2 - portraitSpacing / 2 - PortraitBitmapUtil.getPortraitWidth(count, portraitBitmapWidth);
                         break;
                 }
+                break;
             case 7:
                 switch (position) {
                     case 0:
